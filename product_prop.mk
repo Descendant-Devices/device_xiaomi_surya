@@ -28,6 +28,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
+    debug.sf.enable_gl_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
