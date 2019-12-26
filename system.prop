@@ -3,6 +3,7 @@ vendor.bluetooth.soc=cherokee
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+persist.camera.managebuffer.enable=1
 
 # Cgroup Freeze
 persist.device_config.use_cgroup_freezer=true
