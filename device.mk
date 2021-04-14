@@ -38,10 +38,6 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
 
-# Camera
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -142,6 +138,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/device_nfc_check.sh:install/bin/device_nfc_check.sh
 
 # Soong namespace
+PRODUCT_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/xiaomi/surya

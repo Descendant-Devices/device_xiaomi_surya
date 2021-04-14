@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_surya.mk
+    $(LOCAL_DIR)/descendant_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_surya-user \
-    arrow_surya-userdebug \
-    arrow_surya-eng
+    descendant_surya-user \
+    descendant_surya-userdebug \
+    descendant_surya-eng
