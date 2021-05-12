@@ -102,4 +102,8 @@ void vendor_load_properties() {
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
+
+    //Safetynet workarounds
+    property_override("ro.oem_unlock_supported", "0");
+    property_override("ro.boot.verifiedbootstate", "green");
 }
