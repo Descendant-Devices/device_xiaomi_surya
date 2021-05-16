@@ -12,18 +12,10 @@
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <application
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
         android:persistent="true">
-
-        <receiver android:name=".EarlyStartReceiver" android:directBootAware="true">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
 
         <receiver android:name=".BootCompletedReceiver">
             <intent-filter android:priority="1000">
@@ -31,49 +23,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
-        <receiver android:name=".PowerSaveModeChangeReceiver">
-            <intent-filter>
-                <action android:name="android.os.action.POWER_SAVE_MODE_CHANGED" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".DevicePreferenceActivity"
-            android:label="@string/device_specific_settings_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_specific_settings_summary" />
-            <meta-data android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_refreshrate"/>
-        </activity>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.display" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_settings_app_name" />
-            <meta-data android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_doze_aod"/>
-        </activity>
-
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
 
         <activity
             android:name=".dirac.DiracActivity"
@@ -87,12 +36,13 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dirac_summary" />
             <meta-data android:name="com.android.settings.icon"
-                 android:resource="@drawable/ic_dirac"/>
+                       android:resource="@drawable/ic_dirac"/>
         </activity>
 
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
+            android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -120,7 +70,7 @@
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_speaker_cleaner_icon"/>
+                       android:resource="@drawable/ic_speaker_cleaner_icon"/>
         </activity>
 
         <service
@@ -138,15 +88,6 @@
             </intent-filter>
         </service>
 
-        <service
-            android:name=".RefreshRateTileService"
-            android:icon="@drawable/ic_qs_refresh_rate"
-            android:label="@string/refresh_rate_tile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
     </application>
 </manifest>
+
