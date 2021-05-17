@@ -21,6 +21,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.disableinbandringing=false
 
+# GBoard
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.kb_pad_port_b=1
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
