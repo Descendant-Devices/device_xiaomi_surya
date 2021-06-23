@@ -55,5 +55,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # WFD
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
-    persist.debug.wfd.enable=0 \
+    persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
