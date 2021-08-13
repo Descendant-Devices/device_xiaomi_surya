@@ -115,7 +115,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 TARGET_KERNEL_APPEND_DTB := false
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := surya_defconfig
+TARGET_KERNEL_CONFIG := vendor/surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000

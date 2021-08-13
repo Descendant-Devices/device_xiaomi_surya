@@ -13,9 +13,9 @@
   },
   {
     "remote": "github",
-    "repository": "subhajeetmuhuri/android_kernel_xiaomi_surya",
+    "repository": "GZR-Kernels/Optimus_Drunk_Surya",
     "target_path": "kernel/xiaomi/surya",
-    "branch": "lineage-18.1"
+    "branch": "11.0"
   },
   {
     "remote": "github",
