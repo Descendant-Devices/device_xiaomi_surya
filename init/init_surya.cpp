@@ -83,17 +83,17 @@ void vendor_load_properties() {
     std::string mod_device;
 
     if (hwname == "surya") {
-        model = "M2007J20CG";
+        model = "POCO X3 NFC (surya)";
         device = "surya";
         mod_device = "surya_global";
     } else if (hwname == "karna") {
-        model = "M2007J20CI";
+        model = "POCO X3 (karna)";
         device = "karna";
         mod_device = "surya_in_global";
     }
 
-    fingerprint = "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys";
-    description = "surya_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys";
+    fingerprint = "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys";
+    description = "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
