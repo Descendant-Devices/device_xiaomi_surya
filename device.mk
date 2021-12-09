@@ -397,6 +397,10 @@ PRODUCT_PACKAGES += \
     NotchBarKiller \
     WifiOverlay
 
+#Notch Killer
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
