@@ -8,3 +8,6 @@ type proc_sched_boost, fs_type, proc_type;
 
 # Data files
 type per_boot_file, file_type, data_file_type, core_data_file_type;
+
+type sysfs_wlc, sysfs_type, fs_type;
+type sysfs_chargelevel, sysfs_type, fs_type;

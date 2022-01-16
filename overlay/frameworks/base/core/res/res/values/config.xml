@@ -639,4 +639,6 @@
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
 
+    <string name="config_adaptiveChargingSuspendValue">1</string>
+    <string name="config_adaptiveChargingResumeValue">0</string>
 </resources>
