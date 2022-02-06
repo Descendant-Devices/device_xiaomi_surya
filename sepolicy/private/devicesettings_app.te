@@ -1,0 +1,3 @@
+allow devicesettings_app {
+  sysfs_htsr
+}:{ file lnk_file } rw_file_perms;
