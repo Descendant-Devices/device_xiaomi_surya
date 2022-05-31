@@ -18,21 +18,21 @@
        "branch"      : "twelve"
    },
    {
-       "remote"      : "pixel-devices-blobs",
+       "remote"      : "vendor",
        "repository"  : "vendor_xiaomi_surya",
        "target_path" : "vendor/xiaomi/surya",
        "branch"      : "twelve"
    },
    {
-       "remote"      : "pixel-devices-blobs",
+       "remote"      : "vendor",
        "repository"  : "vendor_xiaomi-firmware",
        "target_path" : "vendor/xiaomi-firmware",
        "branch"      : "twelve"
    },
    {
+       "remote"      : "pixel-devices-blobs",
        "repository"  : "vendor_xiaomi_miatoll-gcam",
        "target_path" : "vendor/xiaomi/miatoll-gcam",
-       "remote"      : "pixel-devices-blobs",
        "branch"      : "twelve"      
    },
    {   "remote"      : "pixel",
